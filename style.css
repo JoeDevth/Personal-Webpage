@@ -125,6 +125,7 @@ p {
 .header-links a {
   color: #757575;
   -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .header-links a:hover {
@@ -225,6 +226,7 @@ p {
   position: absolute;
   opacity: 0;
   -webkit-transition: 1.2s ease;
+  transition: 1.2s ease;
 }
 
 /* Scroll down indicator (bouncing) */
