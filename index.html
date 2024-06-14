@@ -4,13 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>personal portfolio</title>
+  <title>Personal Portfolio</title>
   <!-- เชื่อมต่อไฟล์ CSS -->
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <!-- เชื่อมต่อไฟล์ CSS จาก CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- เชื่อมต่อ jQuery Local -->
+  <script src="js/jquery-3.7.1.min.js"></script> <!-- ปรับเปลี่ยนชื่อไฟล์ตามที่คุณดาวน์โหลด -->
+  <!-- เชื่อมต่อไฟล์ JavaScript อื่น ๆ ที่ต้องใช้ jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+  <script src="script.js"></script> <!-- เชื่อมต่อไฟล์ JavaScript ที่คุณสร้างขึ้น -->
 </head>
 
 <body>
+
+  <script>
+    $(document).ready(function () {
+      console.log("jQuery is loaded and ready!");
+    });
+  </script>
+
+  <!-- เนื้อหาของเว็บไซต์ -->
   <!-- navbar header -->
   <div class="nav-header">
     <div class="nav-brand">
@@ -139,7 +156,8 @@
         <div class="slide">
           <h1>PERSONAL WEBSITE</h1>
           <p>Responsive vertical/horizontal header website theme.</p>
-          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/personalsite.jpg">
+          <img data-src="https://s3-us-west-2.amazonaws.com
+          /bradengelhardt/assets/personalsite.jpg">
         </div>
       </div>
     </div>
@@ -153,7 +171,6 @@
         <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
         <br>
         <div class="contact-form">
-
           <div id="form-messages"></div>
           <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
             <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
@@ -198,7 +215,7 @@
         <div class="social-links">
           <span><a href="https://www.linkedin.com/in/bradleyengelhardt" target="_blank"><i
                 class="fa fa-linkedin fa-2x"></i></a></span>
-          <span><a target="_blank" href="https://twitter.com/bradengelhardt" target="_blank"><i
+          <span><a href="https://twitter.com/bradengelhardt" target="_blank"><i
                 class="fa fa-twitter fa-2x"></i></a></span>
           <span><a href="https://github.com/SquishyAndroid" target="_blank"><i
                 class="fa fa-github fa-2x"></i></a></span>
@@ -211,3 +228,5 @@
   </div>
   <!-- end fullpage -->
 </body>
+
+</html>
